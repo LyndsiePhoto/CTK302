@@ -205,6 +205,5 @@ function draw() {
     //center of side button
 
 
-
   }
 }
