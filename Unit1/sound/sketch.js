@@ -1,4 +1,5 @@
 let song1;
+
 function preload() {
   song1 = loadSound("assets/polaroidshutter.mp3");
 
