@@ -4,15 +4,14 @@ function setup() {
   createCanvas(600, 600);
   rectMode(CENTER);
   ellipseMode(CENTER);
-  font2 = loadFont("fonts/assets/Satisfy.ttf");
+  font2 = loadFont("assets/Satisfy.ttf");
 
 }
-
 
 function draw() {
   background(600);
   textFont(font2, 48);
-  text ("This is Ruby the Polaroid camera. Her superpower is her ability to capture the beauty of the sun in a single \n frame. She enjoys traveling the world with her human and capturing beautiful sunrise and sunset scenes to \n share with others throughout the world.", 5, 515);
+  text("This is Ruby the Polaroid camera. Her superpower is her ability to capture the beauty of the sun in a single \n frame. She enjoys traveling the world with her human and capturing beautiful sunrise and sunset scenes to \n share with others throughout the world.", 5, 515);
 
 
   if (mouseIsPressed) {
