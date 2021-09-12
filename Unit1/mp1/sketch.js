@@ -130,7 +130,7 @@ function draw() {
 
     textFont(font2);
     textSize (24);
-    text("This is Ruby the Polaroid camera. Her superpower is her ability to capture the beauty of the sun in a single \n frame. She enjoys traveling the world with her human and capturing beautiful sunrise and sunset scenes to \n share with others throughout the world.", 5, 515);
+    text("This is Ruby the Polaroid camera. Her superpower is her ability to capture the beauty of the sun in a single \n frame. She enjoys traveling the world with her human and capturing beautiful sunrise and sunset scenes to \n share with others throughout the world.", 5, 500);
 
   } else {
     // when the mouse isn't pressed!
