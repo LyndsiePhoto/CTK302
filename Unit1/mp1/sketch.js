@@ -10,8 +10,7 @@ function setup() {
 
 function draw() {
   background(600);
-  textFont(font2, 48);
-  text("This is Ruby the Polaroid camera. Her superpower is her ability to capture the beauty of the sun in a single \n frame. She enjoys traveling the world with her human and capturing beautiful sunrise and sunset scenes to \n share with others throughout the world.", 5, 515);
+
 
 
   if (mouseIsPressed) {
@@ -128,6 +127,10 @@ function draw() {
     fill('black');
     ellipse(width / 2 - 135, height / 2 - 40, 20, 20);
     //center of side button
+
+    textFont(font2);
+    textSize (24);
+    text("This is Ruby the Polaroid camera. Her superpower is her ability to capture the beauty of the sun in a single \n frame. She enjoys traveling the world with her human and capturing beautiful sunrise and sunset scenes to \n share with others throughout the world.", 5, 515);
 
   } else {
     // when the mouse isn't pressed!
