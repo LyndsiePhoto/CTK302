@@ -1,3 +1,5 @@
+let x = 0;
+
 var font2;
 
 function setup() {
@@ -11,20 +13,38 @@ function setup() {
 function draw() {
   background(255);
 
+  fill('blue');
+  rect(600, 220, -3000, 600);
 
+  fill('yellow');
+  rect(600, 350, -3000, 330);
+
+  fill('green');
+  rect(600, 480, -2000, 300);
+  
+
+  push();
+  translate(x, 0);
+  avatar();
+  pop();
+
+  textFont(font2);
+  textSize(24);
+  fill ('black') ;
+  text("This is Ruby the Polaroid camera. Her superpower is her ability to capture the beauty of the sun in a single \n frame. She enjoys traveling the world with her human and capturing beautiful sunrise and sunset scenes to \n share with others throughout the world.", 5, 500);
+
+
+  x = x + 3;
+  if (x > width) {
+    x = -300;
+  }
+
+}
+
+function avatar() {
 
   if (mouseIsPressed) {
     // stuff that shows when the mouse is pressed
-
-    fill('blue');
-    rect(600, 220, -3000, 600);
-
-    fill('yellow');
-    rect(600, 350, -3000, 330);
-
-    fill('green');
-    rect(600, 480, -2000, 300);
-
 
     fill('white');
     rect(width / 2 - 10, height / 2 - 150, 300, 270);
@@ -128,20 +148,10 @@ function draw() {
     ellipse(width / 2 - 135, height / 2 - 40, 20, 20);
     //center of side button
 
-    textFont(font2);
-    textSize (24);
-    text("This is Ruby the Polaroid camera. Her superpower is her ability to capture the beauty of the sun in a single \n frame. She enjoys traveling the world with her human and capturing beautiful sunrise and sunset scenes to \n share with others throughout the world.", 5, 500);
+
 
   } else {
     // when the mouse isn't pressed!
-    fill('blue');
-    rect(600, 220, -3000, 600);
-
-    fill('yellow');
-    rect(600, 350, -3000, 330);
-
-    fill('green');
-    rect(600, 480, -2000, 300);
 
     fill('white');
     rect(width / 2 - 10, height / 2 - 150, 300, 30);
@@ -211,10 +221,6 @@ function draw() {
     ellipse(width / 2 - 135, height / 2 - 40, 20, 20);
     //center of side button
 
-    textFont(font2);
-    textSize (24);
-    fill ('black') ;
-    text("This is Ruby the Polaroid camera. Her superpower is her ability to capture the beauty of the sun in a single \n frame. She enjoys traveling the world with her human and capturing beautiful sunrise and sunset scenes to \n share with others throughout the world.", 5, 500);
 
 
   }
