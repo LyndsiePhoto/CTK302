@@ -11,13 +11,13 @@ function draw() {
     case 0:
     background('yellow');
     textSize (25);
-    text("What did one traffic light \n say to the other?", 100, height/2) ;
+    text("Why did the golfer bring \n two pairs of pants?", 100, height/2) ;
     break;
 
     case 1:
     background('blue');
     textSize (25);
-    text("Stop Looking! \n I'm changing!", 100, height/2) ;
+    text("In case he got a hole in one.", 100, height/2) ;
     break;
         }
 
