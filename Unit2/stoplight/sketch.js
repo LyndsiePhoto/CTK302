@@ -38,7 +38,7 @@ function draw() {
      break ;
 
      case 2: //yellow
-     fill('black')
+     fill('black');
      ellipse(width/2, height/2-180, 150, 150);
      fill('yellow');
      ellipse(width/2, height/2, 150, 150);
