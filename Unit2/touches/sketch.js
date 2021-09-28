@@ -20,12 +20,12 @@ function draw() {
       break ;
 
       case 2:
-      text("two fingers are touching the screen", 5, 22) ;
+      text("it is a beautiful day in the neighborhood for two", 5, 22) ;
             // put a picture here
       break ;
 
       case 3:
-     text("three are touching the screen", 5, 22) ;
+     text("three friends are touching the screen", 5, 22) ;
             // put a picture here
       break ;
 
