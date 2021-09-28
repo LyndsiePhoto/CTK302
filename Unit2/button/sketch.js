@@ -1,4 +1,5 @@
 let state = 0 ;
+let mouseX = 0 ;
 
 function setup() {
   createCanvas(500, 500);
@@ -35,5 +36,3 @@ if ((mouseX > 100) && (mouseX < 200) && (mouseY > 100) && (mouseY < 200)) {
     state++;
     if (state > 2) state = 0;
   }
-
-}
