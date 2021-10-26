@@ -1,9 +1,10 @@
+flowers = [];
 let cars = [];
 let maxCars = 20;
 let state = 0;
 let timer = 0;
 let carsEaten = 0;
-let Bee, Flower, Flower2, Grass, Yellowbackground;
+let Bee, Grass, Yellowbackground;
 let song1;
 let frogPos;
 let font1;
@@ -24,11 +25,10 @@ function setup() {
   frogPos = createVector(width / 2, height - 80);
 
   Bee = loadImage("assets/bee.png");
-  Flower = loadImage("assets/Flower.png");
   Grass = loadImage("assets/grass.jpg");
-  Flower2 = loadImage("assets/Flower2.png");
   Yellowbackground = loadImage("assets/yellowbackground.jpg");
-
+  flowers[0] = loadImage("assets/Flower.png");
+  flowers[1]= loadImage("assets/Flower2.png");
 }
 
 function draw() {
@@ -154,12 +154,12 @@ class Car {
     this.vel = createVector(random(5), 0);
     this.cor = color(0, random(50, 100), random(190, 245), random(100));
     this.size = random(90);
-    //   this.stroke = random(4) ;
+    this.flowersNum = floor(random (2));
   }
 
   // methods
   display() {
-    image(Flower, this.pos.x, this.pos.y, 100, 100);
+    image(flowers[this.flowersNum], this.pos.x, this.pos.y, 100, 100);
     //image(Flower2, this.pos.x, this.pos.y, 225, 225);
 
   }
