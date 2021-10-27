@@ -15,7 +15,7 @@ function preload() {
 
 function setup() {
   createCanvas(1000, 1000);
-  font1 = loadFont ("assets/Satisfy.ttf");
+  font1 = loadFont("assets/Satisfy.ttf");
   song1.loop();
   for (let i = 0; i < maxCars; i++) {
     cars.push(new Car());
@@ -28,7 +28,7 @@ function setup() {
   Grass = loadImage("assets/grass.jpg");
   Yellowbackground = loadImage("assets/yellowbackground.jpg");
   flowers[0] = loadImage("assets/Flower.png");
-  flowers[1]= loadImage("assets/Flower2.png");
+  flowers[1] = loadImage("assets/Flower2.png");
 }
 
 function draw() {
@@ -154,7 +154,7 @@ class Car {
     this.vel = createVector(random(5), 0);
     this.cor = color(0, random(50, 100), random(190, 245), random(100));
     this.size = random(90);
-    this.flowersNum = floor(random (2));
+    this.flowersNum = floor(random(2));
   }
 
   // methods
