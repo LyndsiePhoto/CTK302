@@ -1,4 +1,4 @@
-flowers = [];
+let flowers = [];
 let cars = [];
 let maxCars = 20;
 let state = 0;
