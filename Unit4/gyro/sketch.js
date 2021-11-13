@@ -39,14 +39,14 @@ function draw() {
 
   rotate(radians(alpha)); // rotate the bunny depending on the alpha intake
 
-  image(elfImage, 0, 0, 700, 2500);
+  image(elfImage, 0, 0, 350, 1200);
   // rect(0, 0, 100, 100) ;
   pop();
 
 
   // Text commands that display debugging data
   textAlign(LEFT);
-  textFont(font1, 20);
+  textFont(font1, 10);
   fill('black');
   text("orientation data:", 25, 25);
   textSize(15);
