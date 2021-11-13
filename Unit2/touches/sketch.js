@@ -1,4 +1,4 @@
-let numberOfTouches ;
+let numberOfTouches;
 Let Grass, Flower, Sun;
 
 function setup() {
@@ -14,28 +14,28 @@ function draw() {
   numberOfTouches = touches.length;
   text(numberOfTouches + ' touches', 5, 10);
 
-  switch(numberOfTouches) {
+  switch (numberOfTouches) {
     case 0:
-      text("no one is touching the screen", 5, 22) ;
-      break ;
+      text("no one is touching the screen", 5, 22);
+      break;
 
-      case 1:
-       text("it's kind of lonely here", 5, 22) ;
-       image(Grass, width / 2, height / 2, 600, 800);
+    case 1:
+      text("it's kind of lonely here", 5, 22);
+      image(Grass, width / 2, height / 2, 600, 800);
       // put a picture here
-      break ;
+      break;
 
-      case 2:
-      text("it is a beautiful day in the neighborhood for two", 5, 22) ;
+    case 2:
+      text("it is a beautiful day in the neighborhood for two", 5, 22);
       image(Flower, width / 2, height / 2, 600, 800);
-            // put a picture here
-      break ;
+      // put a picture here
+      break;
 
-      case 3:
-     text("three friends are touching the screen", 5, 22) ;
-     image(Sun, width / 2, height / 2, 600, 800);
-            // put a picture here
-      break ;
+    case 3:
+      text("three friends are touching the screen", 5, 22);
+      image(Sun, width / 2, height / 2, 600, 800);
+      // put a picture here
+      break;
 
 
   }
