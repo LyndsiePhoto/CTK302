@@ -39,23 +39,23 @@ function draw() {
 
   rotate(radians(alpha)); // rotate the bunny depending on the alpha intake
 
-  image(ElfImage, 0, 0, 100, 500);
+  image(ElfImage, 0, 0, 200, 600);
   // rect(0, 0, 100, 100) ;
   pop();
 
 
   // Text commands that display debugging data
   textAlign(LEFT);
-  textFont(font1, 10);
+  textFont(font1, 20);
   fill('black');
   text("orientation data:", 25, 25);
-  textSize(15);
+  //textSize(15);
   text("alpha: " + alpha, 25, 50);
   text("beta: " + beta, 25, 70);
   text("gamma: " + gamma, 25, 90);
   textSize(20);
   text("acceleration data:", 25, 125);
-  textSize(15);
+  textSize(20);
   text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
   text("y = " + y.toFixed(2), 25, 170);
   text("z = " + z.toFixed(4), 25, 190);
@@ -63,7 +63,7 @@ function draw() {
   // Text that makes CTK type in the background
   fill('white');
   noStroke();
-  textSize(300);
+  textSize(100);
   textAlign(CENTER);
   text("Santa?", width / 2, height / 2);
 
