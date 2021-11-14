@@ -39,7 +39,7 @@ function draw() {
 
   rotate(radians(alpha)); // rotate the bunny depending on the alpha intake
 
-  image(elfImage, 0, 0, 500, 1500);
+  image(ElfImage, 0, 0, 100, 500);
   // rect(0, 0, 100, 100) ;
   pop();
 
