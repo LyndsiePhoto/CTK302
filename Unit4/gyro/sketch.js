@@ -4,7 +4,7 @@ Make sure you turn on orientation lock on your iPhone or Android device. */
 let alpha = 0,
   beta = 0,
   gamma = 0; // gyroscope variablers
-let elfImage;
+let ElfImage;
 let xPosition = 0;
 let yPosition = 0;
 let x = 0,
@@ -17,7 +17,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   font1 = loadFont("assets/Satisfy.ttf");
 
-  elfImage = loadImage("assets/elf.png");
+  ElfImage = loadImage("assets/Elf.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
