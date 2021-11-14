@@ -4,7 +4,7 @@ let maxCars = 20;
 let state = 0;
 let timer = 0;
 let carsEaten = 0;
-let Bee, Grass, Yellowbackground;
+let Bee, Grass, Grass2, Yellowbackground;
 let song1;
 let frogPos;
 let font1;
@@ -26,6 +26,7 @@ function setup() {
 
   Bee = loadImage("assets/bee.png");
   Grass = loadImage("assets/grass.jpg");
+  Grass2 = loadImage("assets/grass2.jpg");
   Yellowbackground = loadImage("assets/yellowbackground.jpg");
   flowers[0] = loadImage("assets/Flower.png");
   flowers[1] = loadImage("assets/Flower2.png");
@@ -63,7 +64,7 @@ function draw() {
       break;
 
     case 3:
-      image(Grass, width / 2, height / 2, width, height);
+      image(Grass2, width / 2, height / 2, width, height);
       fill("black");
       textFont(font1, 45);
       textAlign(CENTER);
