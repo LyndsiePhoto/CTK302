@@ -9,6 +9,7 @@ var yPosition = 0;
 // var bunnyImage;
 var cars = [];
 var frogPos;
+var elfImage;
 
 
 function setup() {
@@ -31,6 +32,7 @@ function setup() {
 
   // load any images you need
   //bunnyImage = loadImage("assets/bunny.jpg");
+  elfImage = loadImage("assets/Elf.png");
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
@@ -38,7 +40,7 @@ function setup() {
 
 function draw() {
 
-  background('#c6f5ff'); // light blue
+  background('red'); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -54,8 +56,9 @@ function draw() {
 
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
-  fill('green');
-  ellipse(0, 0, 80, 80);
+  image(elfImage, 0, 0, 500, 500)
+  //fill('green');
+  //ellipse(0, 0, 80, 80);
   pop();
 
 
