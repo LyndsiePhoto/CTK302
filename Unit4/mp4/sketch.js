@@ -9,7 +9,7 @@ var yPosition = 0;
 // var bunnyImage;
 var cars = [];
 var frogPos;
-var elfImage;
+var elfImage, syrupImage, presentImage;
 
 
 function setup() {
@@ -33,6 +33,8 @@ function setup() {
   // load any images you need
   //bunnyImage = loadImage("assets/bunny.jpg");
   elfImage = loadImage("assets/Elf.png");
+  presentImage = loadImage("assets/Present.png");
+  syrupImage = loadImage ("assets/Syrup.png");
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
@@ -136,22 +138,24 @@ window.addEventListener('devicemotion', function(e) {
 // car class!!
 function Car() {
   // attributes
-  this.pos = createVector(100, 100);
+   this.pos = createVector(100, 100);
   this.vel = createVector(random(-5, 5), random(-5, 5));
-  this.r = random(255);
-  this.g = random(255);
-  this.b = random(255);
-  this.a = random(255);  // alpha opacity value for fill!
+  if (random(2) > 1){
+    this.image = syrupImage;
+  } else {
+    this.image = presentImage;
+  }
 
 
   // methods
   this.display = function() {
 
     // maybe use an image here instead!
-    fill(this.r, this.g, this.b, this.a);
-    ellipse(this.pos.x - 50, this.pos.y, 50, 50);
-    ellipse(this.pos.x + 50, this.pos.y, 50, 50);
-    rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
+    // fill(this.r, this.g, this.b, this.a);
+    // ellipse(this.pos.x - 50, this.pos.y, 50, 50);
+    // ellipse(this.pos.x + 50, this.pos.y, 50, 50);
+    // rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
+    image(this.image, this.pos.x, this.pos.y, 100, 100);
 
   }
 
