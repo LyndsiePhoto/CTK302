@@ -159,10 +159,10 @@ function Car() {
     // rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
     switch (this.type) {
       case 0:
-        image(image2, this.pos.x, this.pos.y, 100, 100);
+        image(image2, this.pos.x, this.pos.y, 50, 50);
         break;
       case 1:
-        image(image3, this.pos.x, this.pos.y, 100, 100);
+        image(image3, this.pos.x, this.pos.y, 50, 50);
         break;
 
     }
