@@ -63,7 +63,7 @@ function draw() {
 
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
-  image(image1, 0, 0, 500, 200);
+  image(image1, 0, 0, 400, 100);
   //fill('green');
   //ellipse(0, 0, 80, 80);
   pop();
@@ -84,7 +84,7 @@ function draw() {
 
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
-  textSize(40);
+  textFont(font1, 20);
   textAlign(CENTER);
   text("Help Buddy collect syrup and presents", width / 2, 600, windowWidth - 200, windowHeight - 200);
 
