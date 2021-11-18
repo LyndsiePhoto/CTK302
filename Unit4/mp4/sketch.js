@@ -9,7 +9,7 @@ var yPosition = 0;
 // var bunnyImage;
 var cars = [];
 var frogPos;
-var elfImage, syrupImage, presentImage;
+var image1, image2, image3;
 
 
 function setup() {
@@ -17,7 +17,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   // initialize accelerometer variables
-//  alpha = 0;
+  //  alpha = 0;
   beta = 0;
   gamma = 0;
 
@@ -32,9 +32,9 @@ function setup() {
 
   // load any images you need
   //bunnyImage = loadImage("assets/bunny.jpg");
-  elfImage = loadImage("assets/Elf.png");
-  presentImage = loadImage("assets/Present.png");
-  syrupImage = loadImage ("assets/Syrup.png");
+  image1 = loadImage("assets/Elf.png");
+  image2 = loadImage("assets/Present.png");
+  image3 = loadImage("assets/Syrup.png");
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
@@ -58,7 +58,7 @@ function draw() {
 
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
-  image(elfImage, 0, 0, 500, 500)
+  image(image1, 0, 0, 500, 500)
   //fill('green');
   //ellipse(0, 0, 80, 80);
   pop();
@@ -81,25 +81,25 @@ function draw() {
   fill('white');
   textSize(40);
   textAlign(CENTER);
-  text("your words or image here!", width / 2, 600, windowWidth - 200, windowHeight - 200);
+  text("Help Buddy collect syrup and presents", width / 2, 600, windowWidth - 200, windowHeight - 200);
 
 
   // Debugging information -- take this out when you're ready for production!
   // Just a bunch of text commands to display data coming in from addEventListeners
-  textAlign(LEFT);
-  textSize(20);
-  fill('black');
-  text("orientation data:", 25, 25);
-  textSize(15);
-  text("alpha: " + alpha, 25, 50);
-  text("beta: " + beta, 25, 70);
-  text("gamma: " + gamma, 25, 90);
-  textSize(20);
-  text("acceleration data:", 25, 125);
-  textSize(15);
-  text("x = " + x, 25, 150); // .toFixed means just show (x) decimal places
-  text("y = " + y, 25, 170);
-  text("z = " + z, 25, 190);
+  // textAlign(LEFT);
+  // textSize(20);
+  // fill('black');
+  // text("orientation data:", 25, 25);
+  // textSize(15);
+  // text("alpha: " + alpha, 25, 50);
+  // text("beta: " + beta, 25, 70);
+  // text("gamma: " + gamma, 25, 90);
+  // textSize(20);
+  // text("acceleration data:", 25, 125);
+  // textSize(15);
+  // text("x = " + x, 25, 150); // .toFixed means just show (x) decimal places
+  // text("y = " + y, 25, 170);
+  // text("z = " + z, 25, 190);
 
 
 }
@@ -138,12 +138,12 @@ window.addEventListener('devicemotion', function(e) {
 // car class!!
 function Car() {
   // attributes
-   this.pos = createVector(100, 100);
+  this.pos = createVector(100, 100);
   this.vel = createVector(random(-5, 5), random(-5, 5));
-  if (random(2) > 1){
-    this.image = syrupImage;
+  if (random(2) > 1) {
+    this.image = image2;
   } else {
-    this.image = presentImage;
+    this.image = image3;
   }
 
 
