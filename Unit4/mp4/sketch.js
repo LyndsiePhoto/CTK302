@@ -10,12 +10,13 @@ var yPosition = 0;
 var cars = [];
 var frogPos;
 var image1, image2, image3;
+let font1;
 
 
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-
+  font1 = loadFont("assets/Satisfy.ttf");
   // initialize accelerometer variables
   //  alpha = 0;
   beta = 0;
@@ -50,6 +51,10 @@ function draw() {
   xPosition = map(gamma, -18, 18, 0, width);
   yPosition = map(beta, 25, 45, 0, height);
 
+  // USE the MOUSE instead of the gyroscope
+  // xPosition = mouseX;
+  // yPosition = mouseY;
+
 
   // move the frog around the screen
   push(); // before you use translate, rotate, or scale commands, push and then pop after
@@ -58,7 +63,7 @@ function draw() {
 
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
-  image(image1, 0, 0, 500, 500)
+  image(image1, 0, 0, 500, 500);
   //fill('green');
   //ellipse(0, 0, 80, 80);
   pop();
@@ -140,11 +145,8 @@ function Car() {
   // attributes
   this.pos = createVector(100, 100);
   this.vel = createVector(random(-5, 5), random(-5, 5));
-  if (random(2) > 1) {
-    this.image = image2;
-  } else {
-    this.image = image3;
-  }
+  this.type = int(random(2));
+
 
 
   // methods
@@ -155,7 +157,16 @@ function Car() {
     // ellipse(this.pos.x - 50, this.pos.y, 50, 50);
     // ellipse(this.pos.x + 50, this.pos.y, 50, 50);
     // rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
-    image(this.image, this.pos.x, this.pos.y, 100, 100);
+    switch (this.type) {
+      case 0:
+        image(image2, this.pos.x, this.pos.y, 100, 100);
+        break;
+      case 1:
+        image(image3, this.pos.x, this.pos.y, 100, 100);
+        break;
+
+    }
+
 
   }
 
