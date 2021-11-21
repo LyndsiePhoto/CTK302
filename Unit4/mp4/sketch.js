@@ -63,7 +63,7 @@ function draw() {
 
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
-  image(image1, 0, 0, 300, 50);
+  image(image1, 0, 0, 100, 50);
   //fill('green');
   //ellipse(0, 0, 80, 80);
   pop();
