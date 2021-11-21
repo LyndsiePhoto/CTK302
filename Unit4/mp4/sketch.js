@@ -84,7 +84,7 @@ function draw() {
   }
 
   // MORE DECORATIONS - write that pretty ATK type on top.
-  fill('white');
+  fill('black');
   textFont(font1, 30);
   textAlign(CENTER);
   text("Help the bee polinate flowers.", width / 2, 600, windowWidth - 200, windowHeight - 200);
