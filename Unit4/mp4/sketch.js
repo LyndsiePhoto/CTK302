@@ -43,7 +43,7 @@ function setup() {
 }
 
 function draw() {
-  image(image4, width, height, windowWidth, windowHeight);
+  image(image4, 1000, 3000, windowWidth, windowHeight);
   //background('red'); // light blue
 
   // the map command !!!!
