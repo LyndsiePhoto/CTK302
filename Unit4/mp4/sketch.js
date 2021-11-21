@@ -33,9 +33,9 @@ function setup() {
 
   // load any images you need
   //bunnyImage = loadImage("assets/bunny.jpg");
-  image1 = loadImage("assets/Elf.png");
-  image2 = loadImage("assets/Present.png");
-  image3 = loadImage("assets/Syrup.png");
+  image1 = loadImage("assets/bee.png");
+  image2 = loadImage("assets/F1.png");
+  image3 = loadImage("assets/F2.png");
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
@@ -86,7 +86,7 @@ function draw() {
   fill('white');
   textFont(font1, 30);
   textAlign(CENTER);
-  text("Help Buddy collect syrup and presents", width / 2, 600, windowWidth - 200, windowHeight - 200);
+  text("Help the bee polinate flowers.", width / 2, 600, windowWidth - 200, windowHeight - 200);
 
 
   // Debugging information -- take this out when you're ready for production!
