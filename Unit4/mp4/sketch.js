@@ -9,7 +9,7 @@ var yPosition = 0;
 // var bunnyImage;
 var cars = [];
 var frogPos;
-var image1, image2, image3;
+var image1, image2, image3, image4;
 let font1;
 
 
@@ -36,14 +36,15 @@ function setup() {
   image1 = loadImage("assets/bee.png");
   image2 = loadImage("assets/F1.png");
   image3 = loadImage("assets/F2.png");
+  image4 = loadImage("assets/Yellow.jpg");
   imageMode(CENTER);
   rectMode(CENTER);
   noStroke();
 }
 
 function draw() {
-
-  background('red'); // light blue
+  image(image4, 0, 0, windowWidth, windowHeight);
+  //background('red'); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -63,7 +64,7 @@ function draw() {
 
   // draw the FROG
   // image(bunnyImage, 0, 0, 500, 500);
-  image(image1, 0, 0, 100, 50);
+  image(image1, 0, 0, 100, 100);
   //fill('green');
   //ellipse(0, 0, 80, 80);
   pop();
