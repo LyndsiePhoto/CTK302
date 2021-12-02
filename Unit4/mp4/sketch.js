@@ -11,10 +11,14 @@ var cars = [];
 var frogPos;
 var image1, image2, image3, image4;
 let font1;
+let song1;
 
+function preload() {
+  song1 = loadSound("assets/Bee-noise.mp3");
+}
 
 function setup() {
-
+song1.loop();
   createCanvas(windowWidth, windowHeight);
   font1 = loadFont("assets/Satisfy.ttf");
   // initialize accelerometer variables
@@ -87,7 +91,7 @@ function draw() {
   fill('black');
   textFont(font1, 30);
   textAlign(CENTER);
-  text("Help the bee polinate flowers.", width / 2, 600, windowWidth - 200, windowHeight - 200);
+  text("Help the bee collect flowers.", width / 2, 600, windowWidth - 200, windowHeight - 200);
 
 
   // Debugging information -- take this out when you're ready for production!
