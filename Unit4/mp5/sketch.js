@@ -91,7 +91,7 @@ function draw() {
   fill('black');
   textFont(font1, 30);
   textAlign(CENTER);
-  text("Help the bee collect flowers.", width / 2, 600, windowWidth - 200, windowHeight - 200);
+  text("Help buddy collect syrup and Santa.", width / 2, 600, windowWidth - 200, windowHeight - 200);
 
 
   // Debugging information -- take this out when you're ready for production!
