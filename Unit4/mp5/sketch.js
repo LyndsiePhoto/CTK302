@@ -11,11 +11,11 @@ var cars = [];
 var frogPos;
 var image1, image2, image3, image4;
 let font1;
-let song1;
+//let song1;
 
-function preload() {
-  song1 = loadSound("assets/Bee-noise.mp3");
-}
+// function preload() {
+//   song1 = loadSound("assets/Bee-noise.mp3");
+// }
 
 function setup() {
 song1.loop();
@@ -37,7 +37,7 @@ song1.loop();
 
   // load any images you need
   //bunnyImage = loadImage("assets/bunny.jpg");
-  image1 = loadImage("assets/console.error();lf.png");
+  image1 = loadImage("assets/Elf.png");
   image2 = loadImage("assets/Syrup.png");
   image3 = loadImage("assets/Santa.png");
   image4 = loadImage("assets/Yellow.jpg");
