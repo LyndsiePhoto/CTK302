@@ -167,7 +167,7 @@ function Car() {
         image(image2, this.pos.x, this.pos.y, 50, 50);
         break;
       case 1:
-        image(image3, this.pos.x, this.pos.y, 50, 50);
+        image(image3, this.pos.x, this.pos.y, 70, 50);
         break;
 
     }
