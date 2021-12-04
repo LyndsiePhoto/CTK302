@@ -28,7 +28,7 @@ function setup() {
   Grass = loadImage("assets/grass.jpg");
   Grass2 = loadImage("assets/grass2.jpg");
   Yellowbackground = loadImage("assets/yellowbackground.jpg");
-  flowers[0] = loadImage("assets/Flower.png");
+  flowers[0] = loadImage("assets/Flower3.png");
   flowers[1] = loadImage("assets/Flower2.png");
 }
 
