@@ -37,7 +37,7 @@ song1.loop();
 
   // load any images you need
   //bunnyImage = loadImage("assets/bunny.jpg");
-  image1 = loadImage("assets/elf.png");
+  image1 = loadImage("assets/console.error();lf.png");
   image2 = loadImage("assets/F1.png");
   image3 = loadImage("assets/F2.png");
   image4 = loadImage("assets/Yellow.jpg");
