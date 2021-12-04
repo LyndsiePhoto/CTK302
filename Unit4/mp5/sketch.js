@@ -38,8 +38,8 @@ song1.loop();
   // load any images you need
   //bunnyImage = loadImage("assets/bunny.jpg");
   image1 = loadImage("assets/console.error();lf.png");
-  image2 = loadImage("assets/F1.png");
-  image3 = loadImage("assets/F2.png");
+  image2 = loadImage("assets/Syrup.png");
+  image3 = loadImage("assets/Santa.png");
   image4 = loadImage("assets/Yellow.jpg");
   imageMode(CENTER);
   rectMode(CENTER);
